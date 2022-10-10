@@ -1,5 +1,7 @@
-html {
-  font-size: 62.5%;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -10,6 +12,7 @@ body {
   color: #444;
   background: whitesmoke;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 code {

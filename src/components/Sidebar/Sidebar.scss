@@ -1,8 +1,74 @@
 .sidebar {
-    background-color: palegoldenrod;
+    background-color: #181818;
     width: 100%;
     position: absolute;
+    padding: 10px 20px;
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    min-width: 60px;
+
+    a {
+        font-size: 16px;
+        transition: all 0.3s ease-out;
+        text-decoration: none;
+        position: relative;
+
+        &:hover {
+            transform: scale(1.1);
+            color: black;
+
+            svg {
+                transition: all 0.3s ease-out;
+                opacity: 0;
+            }
+
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            left: -5px;
+            bottom: 5px;
+            opacity: 0;
+            transition: all 0.3s ease-out;
+            letter-spacing: 2px;
+            font-size: 9px;
+            color: white;
+        }
+        
+        &.home-link::after {
+            content: 'HOME';
+        }
+        &.about-link::after {
+            content: 'ABOUT';
+        }
+        &.contact-link::after {
+            content: 'CONTACT';
+        }
+        &.active {
+            svg {
+                color: #ffd700;
+            }
+        }
+    }
+
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+
+    li {
+        list-style: none;
+    }
 }
