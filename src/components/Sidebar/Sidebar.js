@@ -1,5 +1,5 @@
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faEnvelope, faHome, faPen } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
 import './Sidebar.scss';
@@ -12,13 +12,16 @@ export default function Sidebar() {
             </Link>
             <nav>
                 <NavLink exact="true" activeclassname="active" to="/" className="home-link">
-                    <FontAwesomeIcon icon={faHome} color="#4e4e4e"/>
+                    <FontAwesomeIcon icon={faHome} color="#787692"/>
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" to="/about" className="about-link">
-                    <FontAwesomeIcon icon={faUser} color="#4e4e4e"/>
+                <NavLink exact="true" activeclassname="active" to="/works" className="works-link">
+                    <FontAwesomeIcon icon={faBriefcase} color="#787692"/>
+                </NavLink>
+                <NavLink exact="true" activeclassname="active" to="/posts" className="posts-link">
+                    <FontAwesomeIcon icon={faPen} color="#787692"/>
                 </NavLink>
                 <NavLink exact="true" activeclassname="active" to="/contact" className="contact-link">
-                    <FontAwesomeIcon icon={faEnvelope} color="#4e4e4e"/>
+                    <FontAwesomeIcon icon={faEnvelope} color="#787692"/>
                 </NavLink>
             </nav>
             <ul>

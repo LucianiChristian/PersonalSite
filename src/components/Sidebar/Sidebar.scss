@@ -1,5 +1,5 @@
 .sidebar {
-    background-color: #181818;
+    background-color: #3d3b57;
     width: 100%;
     position: absolute;
     padding: 10px 20px;
@@ -7,6 +7,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.logo {
+    color: #787692;
+    text-decoration: none;
 }
 
 nav {
@@ -49,8 +54,11 @@ nav {
         &.home-link::after {
             content: 'HOME';
         }
-        &.about-link::after {
-            content: 'ABOUT';
+        &.works-link::after {
+            content: 'WORKS';
+        }
+        &.posts-link::after {
+            content: 'POSTS';
         }
         &.contact-link::after {
             content: 'CONTACT';
@@ -73,6 +81,7 @@ ul {
 
         a {
             transition: all 0.3s ease;
+            color: #787692;
         }
 
         a:hover {
