@@ -18,12 +18,12 @@ nav {
     justify-content: space-between;
     gap: 40px;
     min-width: 60px;
+    position: relative;
 
     a {
         font-size: 16px;
         transition: all 0.3s ease-out;
         text-decoration: none;
-        position: relative;
 
         &:hover {
             transform: scale(1.1);
@@ -87,5 +87,54 @@ ul {
             color: #ffd700;
             transform: scale(1.1);
         }
+    }
+}
+
+button {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    nav {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        flex-direction: column;
+        gap: 15px;
+        width: 160px;
+        border-radius: 6px;
+        padding: 4px;
+
+        a {
+            position: relative;
+            padding: 6px;
+            border-radius: 6px;
+
+            &::after {
+                opacity: 1;
+                bottom: auto;
+                left: 40px;
+                top: 11px;
+            }    
+
+            &:hover {
+                transform: none;
+                color: black;
+                background-color: grey;
+    
+                svg {
+                    transition: all 0.3s ease-out;
+                    opacity: 1;
+                }
+    
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    
+    button {
+        display: block;
     }
 }

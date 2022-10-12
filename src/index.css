@@ -9,8 +9,6 @@ body {
   font-family: 300 11px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  color: #444;
-  background: whitesmoke;
   overflow: hidden;
   min-height: 100vh;
 }

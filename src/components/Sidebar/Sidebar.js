@@ -1,10 +1,16 @@
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faBriefcase, faEnvelope, faHome, faPen } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faBriefcase, faEnvelope, faHome, faPen } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, NavLink } from 'react-router-dom';
 import './Sidebar.scss';
 
 export default function Sidebar() {
+    
+    
+    function toggleNav() {
+
+    }
+
     return (
         <div className="sidebar dark">
             <Link className="logo" to="/">
@@ -41,6 +47,7 @@ export default function Sidebar() {
                     </a>
                 </li>
             </ul>
+            <button onClick={toggleNav}><FontAwesomeIcon icon={faBars} color="4e4e4e"/></button>
         </div>
     )
 }
