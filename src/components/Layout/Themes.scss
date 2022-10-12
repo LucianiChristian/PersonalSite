@@ -1,0 +1,31 @@
+$dark-mainText: white;
+$dark-secondaryText: #787692;
+$dark-bg-color: #33314e;
+$dark-secondarybg-color: #3d3b57;
+
+$light-mainText: black;
+$light-secondaryText: #787692;
+$light-bg-color: white;
+$light-secondarybg-color: #f6f6f6;
+
+.dark {
+    &.page {
+        background-color: $dark-bg-color;
+        color: $dark-mainText;
+    }
+    &.sidebar {
+        background-color: $dark-secondarybg-color;
+        color: $dark-secondaryText;
+    }
+}
+
+.light {
+    &.page, &.page * {
+        background-color: $light-bg-color;
+        color: $light-mainText;
+    }
+    &.sidebar, &.sidebar * {
+        background-color: $light-secondarybg-color;
+        color: $light-secondaryText;
+    }
+}

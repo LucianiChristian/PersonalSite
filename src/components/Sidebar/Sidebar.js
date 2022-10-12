@@ -6,9 +6,9 @@ import './Sidebar.scss';
 
 export default function Sidebar() {
     return (
-        <div className="sidebar">
+        <div className="sidebar dark">
             <Link className="logo" to="/">
-                <p>Christian Luciani</p>
+                <p className="logo">Christian Luciani</p>
             </Link>
             <nav>
                 <NavLink exact="true" activeclassname="active" to="/" className="home-link">
