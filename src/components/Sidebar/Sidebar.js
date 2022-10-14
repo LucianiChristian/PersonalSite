@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router-dom';
 import './Sidebar.scss';
 
 export default function Sidebar() {
-    const [showMenu, setShowMenu] = React.useState(true);
+    const [showMenu, setShowMenu] = React.useState(false);
     
     function toggleNav() {
         setShowMenu(prevState => !prevState);
