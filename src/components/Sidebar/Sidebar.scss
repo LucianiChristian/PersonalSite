@@ -40,9 +40,11 @@ nav {
         }
 
         &::after {
+            margin-top: 4px;
+            width: 60px;
+            text-align: center;
+            margin-left: -35px;
             position: absolute;
-            left: -5px;
-            bottom: 5px;
             opacity: 0;
             transition: all 0.3s ease-out;
             letter-spacing: 2px;
