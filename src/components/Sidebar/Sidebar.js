@@ -1,3 +1,4 @@
+import React from 'react';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBars, faBriefcase, faEnvelope, faHome, faPen } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -5,10 +6,10 @@ import { Link, NavLink } from 'react-router-dom';
 import './Sidebar.scss';
 
 export default function Sidebar() {
-    
+    const [showMenu, setShowMenu] = React.useState(true);
     
     function toggleNav() {
-
+        setShowMenu(prevState => !prevState);
     }
 
     return (
@@ -16,7 +17,7 @@ export default function Sidebar() {
             <Link className="logo" to="/">
                 <p className="logo">Christian Luciani</p>
             </Link>
-            <nav>
+            <nav className={showMenu ? "show" : "hide"}>
                 <NavLink exact="true" activeclassname="active" to="/" className="home-link">
                     <FontAwesomeIcon icon={faHome} color="#787692"/>
                 </NavLink>
@@ -30,7 +31,7 @@ export default function Sidebar() {
                     <FontAwesomeIcon icon={faEnvelope} color="#787692"/>
                 </NavLink>
             </nav>
-            <ul>
+            <ul className={showMenu ? "show" : "hide"}>
                 <li>
                     <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/christian-luciani/">
                         <FontAwesomeIcon icon={faLinkedin} />

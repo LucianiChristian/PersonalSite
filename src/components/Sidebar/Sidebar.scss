@@ -107,14 +107,16 @@ button {
 
 @media (max-width: 600px) {
     nav {
+        display: none;
         position: absolute;
-        right: 0;
-        top: 60px;
+        right: 12px;
+        top: 55px;
         flex-direction: column;
         gap: 15px;
         width: 160px;
-        border-radius: 6px;
+        border-radius: 6px 6px 0px 0px;
         padding: 4px;
+        transition: 0.3s all ease;
 
         a {
             position: relative;
@@ -145,7 +147,28 @@ button {
         }
     }
     
+    ul {
+        position: absolute;
+        right: 12px;
+        top: 240px;
+        gap: 15px;
+        width: 160px;
+        border-radius: 0px 0px 6px 6px;
+        padding: 4px;
+        transition: 0.3s all ease;
+        justify-content: space-evenly;
+    }
+
     button {
         display: block;
     }
+
+    .show {
+        display: flex;
+    }
+    
+    .hide {
+        display: none;
+    }
 }
+

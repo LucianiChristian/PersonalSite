@@ -17,7 +17,7 @@ $light-secondarybg-color: #f6f6f6;
         background-color: $dark-secondarybg-color;
         color: $dark-secondaryText;
     }
-    & nav {
+    & nav, & ul {
         background-color: $dark-secondarybg-color;
     }
 }
