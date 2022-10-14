@@ -92,6 +92,17 @@ ul {
 
 button {
     display: none;
+    background-color: transparent;
+    border: none;
+    transition: 0.3s all ease;
+
+    &:hover {
+        transform: scale(1.1);
+        
+        svg {
+            color: #ffd700;
+        }       
+    }
 }
 
 @media (max-width: 600px) {

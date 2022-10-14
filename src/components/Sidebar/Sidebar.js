@@ -33,21 +33,21 @@ export default function Sidebar() {
             <ul>
                 <li>
                     <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/christian-luciani/">
-                        <FontAwesomeIcon icon={faLinkedin} color="4e4e4e"/>
+                        <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                 </li>
                 <li>
                     <a target="_blank" rel="noreferrer" href="https://github.com/LucianiChristian">
-                        <FontAwesomeIcon icon={faGithub} color="4e4e4e"/>
+                        <FontAwesomeIcon icon={faGithub} />
                     </a>
                 </li>
                 <li>
                     <a target="_blank" rel="noreferrer" href="https://www.instagram.com/christian_luciani/">
-                        <FontAwesomeIcon icon={faInstagram} color="4e4e4e"/>
+                        <FontAwesomeIcon icon={faInstagram} />
                     </a>
                 </li>
             </ul>
-            <button onClick={toggleNav}><FontAwesomeIcon icon={faBars} color="4e4e4e"/></button>
+            <button onClick={toggleNav}><FontAwesomeIcon icon={faBars} color="#787692"/></button>
         </div>
     )
 }
