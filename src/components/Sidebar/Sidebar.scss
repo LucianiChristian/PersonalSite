@@ -10,7 +10,6 @@
 
 .logo {
     text-decoration: none;
-    color: white;
 }
 
 nav {
@@ -49,7 +48,6 @@ nav {
             transition: all 0.3s ease-out;
             letter-spacing: 2px;
             font-size: 9px;
-            color: white;
         }
         
         &.home-link::after {
@@ -178,4 +176,3 @@ button {
         display: none;
     }
 }
-

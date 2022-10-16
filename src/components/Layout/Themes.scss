@@ -16,19 +16,35 @@ $light-secondarybg-color: #f6f6f6;
     &.sidebar {
         background-color: $dark-secondarybg-color;
         color: $dark-secondaryText;
+
+        nav, ul, p {
+            background-color: $dark-secondarybg-color;
+            color: $dark-mainText;
+        }
+
+        a::after {
+            color: $dark-mainText;
+        }
     }
-    & nav, & ul {
-        background-color: $dark-secondarybg-color;
-    }
+
 }
 
 .light {
-    &.page, &.page * {
+    &.page {
         background-color: $light-bg-color;
         color: $light-mainText;
     }
-    &.sidebar, &.sidebar * {
+    &.sidebar {
         background-color: $light-secondarybg-color;
         color: $light-secondaryText;
+        
+        nav, ul, p {
+            background-color: $light-secondarybg-color;
+            color: $light-mainText;
+        }
+
+        a::after {
+            color: $light-mainText;
+        }
     }
 }
