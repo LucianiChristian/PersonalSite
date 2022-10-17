@@ -1,7 +1,8 @@
 .sidebar {
+    position: fixed;
+    
     height: 100%;
     width: 120px;
-    position: fixed;
     padding: 10px 20px;
 
     display: flex;
@@ -16,11 +17,12 @@
 }
 
 nav {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
-    position: relative;
 
     a {
         font-size: 20px;
@@ -29,7 +31,6 @@ nav {
 
         &:hover {
             transform: scale(1.1);
-            color: black;
 
             svg {
                 transition: all 0.3s ease-out;
@@ -42,15 +43,18 @@ nav {
         }
 
         &::after {
-            margin-top: 4px;
-            width: 60px;
-            text-align: center;
-            margin-left: -35px;
             position: absolute;
-            opacity: 0;
-            transition: all 0.3s ease-out;
+            width: 60px;
+            margin-top: 4px;
+            margin-left: -35px;
+            
+            text-align: center;
             letter-spacing: 2px;
             font-size: 12px;
+            
+            opacity: 0;
+            
+            transition: all 0.3s ease-out;
         }
         
         &.home-link::after {
@@ -65,13 +69,8 @@ nav {
         &.contact-link::after {
             content: 'CONTACT';
         }
-        &.active {
-            svg {
-                color: #ffd700;
-            }
-        }
+        
     }
-
 }
 
 ul {
@@ -83,11 +82,9 @@ ul {
 
         a {
             transition: all 0.3s ease;
-            color: #787692;
         }
 
         a:hover {
-            color: #ffd700;
             transform: scale(1.1);
         }
     }
@@ -95,16 +92,14 @@ ul {
 
 button {
     display: none;
-    background-color: transparent;
     border: none;
-    transition: 0.3s all ease;
 
+    background-color: transparent;
+    
+    transition: 0.3s all ease;
+    
     &:hover {
         transform: scale(1.1);
-        
-        svg {
-            color: #ffd700;
-        }       
     }
 }
 
@@ -123,33 +118,32 @@ button {
         top: 55px;
         gap: 15px;
         width: 160px;
-        border-radius: 6px 6px 0px 0px;
         padding: 4px;
+
+        border-radius: 6px 6px 0px 0px;
 
         a {
             position: relative;
             padding: 6px;
             border-radius: 6px;
+
             font-size: 16px;
 
             &::after {
-                opacity: 1;
+                width: auto;
                 bottom: auto;
                 left: 40px;
                 top: 11px;
-
                 margin-top: 0px;
-                width: auto;
                 margin-left: 0px;
-                opacity: 1;
-
+                
                 font-size: 9px;
+                
+                opacity: 1;
             }    
 
             &:hover {
                 transform: none;
-                color: black;
-                background-color: grey;
     
                 svg {
                     transition: all 0.3s ease-out;
@@ -169,10 +163,14 @@ button {
         top: 240px;
         gap: 15px;
         width: 160px;
+
+        display: flex;
+        justify-content: space-evenly;
+        
         border-radius: 0px 0px 6px 6px;
         padding: 4px;
+
         transition: 0.3s all ease;
-        justify-content: space-evenly;
     }
 
     button {

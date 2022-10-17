@@ -19,16 +19,16 @@ export default function Sidebar() {
             </Link>
             <nav className={showMenu ? "show" : "hide"}>
                 <NavLink exact={true} activeclassname="active" to="/" end className="home-link">
-                    <FontAwesomeIcon icon={faHome} color="#787692"/>
+                    <FontAwesomeIcon icon={faHome} />
                 </NavLink>
                 <NavLink exact={true} activeclassname="active" to="/works" className="works-link">
-                    <FontAwesomeIcon icon={faBriefcase} color="#787692"/>
+                    <FontAwesomeIcon icon={faBriefcase} />
                 </NavLink>
                 <NavLink exact={true} activeclassname="active" to="/posts" className="posts-link">
-                    <FontAwesomeIcon icon={faPen} color="#787692"/>
+                    <FontAwesomeIcon icon={faPen} />
                 </NavLink>
                 <NavLink exact={true} activeclassname="active" to="/contact" className="contact-link">
-                    <FontAwesomeIcon icon={faEnvelope} color="#787692"/>
+                    <FontAwesomeIcon icon={faEnvelope} />
                 </NavLink>
             </nav>
             <ul className={showMenu ? "show" : "hide"}>

@@ -2,6 +2,8 @@ $dark-mainText: white;
 $dark-secondaryText: #787692;
 $dark-bg-color: #33314e;
 $dark-secondarybg-color: #3d3b57;
+$dark-accent: #ffd700;
+$dark-hover: rgba(128, 128, 128, 0.3);
 
 $light-mainText: black;
 $light-secondaryText: #787692;
@@ -20,13 +22,46 @@ $light-secondarybg-color: #f6f6f6;
         nav, ul, p {
             background-color: $dark-secondarybg-color;
             color: $dark-mainText;
+            
+            a {
+                color: $dark-secondaryText;
+
+                &.active {
+                    svg {
+                        color: $dark-accent;
+                    }
+                }
+            }
+        }
+
+        ul {
+            a:hover {
+                color: $dark-accent;
+            }
         }
 
         a::after {
             color: $dark-mainText;
         }
+
+        button {
+            &:hover {
+                svg {
+                    color: $dark-accent;
+                }
+            }
+        }
     }
 
+    @media (max-width: 600px) {
+        nav {
+            a {
+                &:hover {
+                    background-color: $dark-hover;
+                }
+            }
+        }
+    }
 }
 
 .light {
