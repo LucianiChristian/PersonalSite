@@ -5,7 +5,13 @@
 
     height: 100vh;
     padding-top: 80px;
-    padding-left: 40px;
+    padding-left: 180px;
     padding-right: 40px;
+}
+
+@media (max-width: 600px) {
+    .page {
+        padding-left: 40px;
+    }
 }
 
