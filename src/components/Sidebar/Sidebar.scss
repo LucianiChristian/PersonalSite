@@ -45,8 +45,7 @@ nav {
         &::after {
             position: absolute;
             width: 60px;
-            margin-top: 4px;
-            margin-left: -35px;
+            margin-top: 5px;
             
             text-align: center;
             letter-spacing: 2px;
@@ -59,17 +58,20 @@ nav {
         
         &.home-link::after {
             content: 'HOME';
+            margin-left: -39px;
         }
         &.works-link::after {
             content: 'WORKS';
+            margin-left: -37px;
         }
         &.posts-link::after {
             content: 'POSTS';
+            margin-left: -37px;
         }
         &.contact-link::after {
             content: 'CONTACT';
+            margin-left: -40px;
         }
-        
     }
 }
 
