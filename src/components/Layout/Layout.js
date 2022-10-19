@@ -7,6 +7,7 @@ import Works from '../Works/Works'
 import Posts from '../Posts/Posts'
 import Contact from '../Contact/Contact'
 import { ThemeContextConsumer } from '../../contexts/ThemeContext';
+import ThemeToggleButton from '../ThemeToggleButton/ThemeToggleButton';
 
 export default function Layout() {
     return (
@@ -15,7 +16,7 @@ export default function Layout() {
             <ThemeContextConsumer>
                 {(context) => (
                     <div className={`page ${context.theme}`}>
-                        <button>hiasdfsdf</button> 
+                        <ThemeToggleButton />
                         <Routes>
                             <Route path="/" element={<Home />} />
                             <Route path="/works" element={<Works />} />

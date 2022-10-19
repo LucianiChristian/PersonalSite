@@ -5,7 +5,11 @@ const {Provider, Consumer} = React.createContext();
 function ThemeContextProvider(props) {
     const [theme, setTheme] = React.useState("dark");
 
-    const context = { theme, setTheme };
+    function toggleTheme() {
+        setTheme(prevTheme => prevTheme === "dark" ? "light" : "dark");
+    }
+
+    const context = { theme, toggleTheme };
     
     return (
         <Provider value={context}>

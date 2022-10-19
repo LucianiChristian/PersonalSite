@@ -14,6 +14,11 @@ $light-secondarybg-color: #f6f6f6;
     &.page {
         background-color: $dark-bg-color;
         color: $dark-mainText;
+
+        .themeToggle {
+            background: $dark-accent;
+            color: $dark-secondaryText;
+        }
     }
     &.sidebar {
         background-color: $dark-secondarybg-color;
