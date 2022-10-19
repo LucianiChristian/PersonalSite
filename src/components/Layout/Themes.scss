@@ -9,6 +9,8 @@ $light-mainText: black;
 $light-secondaryText: #787692;
 $light-bg-color: white;
 $light-secondarybg-color: #f6f6f6;
+$light-accent: #ffd700; 
+$light-hover: rgba(128, 128, 128, 0.3);
 
 .dark {
     &.page {
@@ -73,18 +75,57 @@ $light-secondarybg-color: #f6f6f6;
     &.page {
         background-color: $light-bg-color;
         color: $light-mainText;
+
+        .themeToggle {
+            background: $light-accent;
+            color: $light-secondaryText;
+        }
     }
     &.sidebar {
         background-color: $light-secondarybg-color;
         color: $light-secondaryText;
-        
+
         nav, ul, p {
             background-color: $light-secondarybg-color;
             color: $light-mainText;
+            
+            a {
+                color: $light-secondaryText;
+
+                &.active {
+                    svg {
+                        color: $light-accent;
+                    }
+                }
+            }
+        }
+
+        ul {
+            a:hover {
+                color: $light-accent;
+            }
         }
 
         a::after {
             color: $light-mainText;
+        }
+
+        button {
+            &:hover {
+                svg {
+                    color: $light-accent;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        nav {
+            a {
+                &:hover {
+                    background-color: $light-hover;
+                }
+            }
         }
     }
 }
