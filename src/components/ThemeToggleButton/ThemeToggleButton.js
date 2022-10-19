@@ -1,4 +1,5 @@
 import React from 'react';
+import './ThemeToggleButton.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { ThemeContextConsumer } from '../../contexts/ThemeContext';
