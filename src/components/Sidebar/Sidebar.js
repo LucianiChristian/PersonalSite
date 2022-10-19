@@ -15,8 +15,8 @@ export default function Sidebar() {
 
     return (
         <ThemeContextConsumer>
-            {(theme) => (
-                <div className={`sidebar ${theme}`}>
+            {(context) => (
+                <div className={`sidebar ${context.theme}`}>
                     <Link className="logo" to="/">
                         <p className="logo">Christian Luciani</p>
                     </Link>

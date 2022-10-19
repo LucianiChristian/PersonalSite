@@ -9,99 +9,99 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-}
 
-.logo {
-    text-decoration: none;
-    text-align: center;
-}
-
-nav {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 40px;
-
-    a {
-        font-size: 20px;
-        transition: all 0.3s ease-out;
+    .logo {
         text-decoration: none;
+        text-align: center;
+    }
 
+    nav {
+        position: relative;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+    
+        a {
+            font-size: 20px;
+            transition: all 0.3s ease-out;
+            text-decoration: none;
+    
+            &:hover {
+                transform: scale(1.1);
+    
+                svg {
+                    transition: all 0.3s ease-out;
+                    opacity: 0;
+                }
+    
+                &::after {
+                    opacity: 1;
+                }
+            }
+    
+            &::after {
+                position: absolute;
+                width: 60px;
+                margin-top: 5px;
+                
+                text-align: center;
+                letter-spacing: 2px;
+                font-size: 12px;
+                
+                opacity: 0;
+                
+                transition: all 0.3s ease-out;
+            }
+            
+            &.home-link::after {
+                content: 'HOME';
+                margin-left: -39px;
+            }
+            &.works-link::after {
+                content: 'WORKS';
+                margin-left: -37px;
+            }
+            &.posts-link::after {
+                content: 'POSTS';
+                margin-left: -37px;
+            }
+            &.contact-link::after {
+                content: 'CONTACT';
+                margin-left: -40px;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        gap: 20px;
+    
+        li {
+            list-style: none;
+    
+            a {
+                transition: all 0.3s ease;
+            }
+    
+            a:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    button {
+        display: none;
+        border: none;
+    
+        background-color: transparent;
+        
+        transition: 0.3s all ease;
+        
         &:hover {
             transform: scale(1.1);
-
-            svg {
-                transition: all 0.3s ease-out;
-                opacity: 0;
-            }
-
-            &::after {
-                opacity: 1;
-            }
         }
-
-        &::after {
-            position: absolute;
-            width: 60px;
-            margin-top: 5px;
-            
-            text-align: center;
-            letter-spacing: 2px;
-            font-size: 12px;
-            
-            opacity: 0;
-            
-            transition: all 0.3s ease-out;
-        }
-        
-        &.home-link::after {
-            content: 'HOME';
-            margin-left: -39px;
-        }
-        &.works-link::after {
-            content: 'WORKS';
-            margin-left: -37px;
-        }
-        &.posts-link::after {
-            content: 'POSTS';
-            margin-left: -37px;
-        }
-        &.contact-link::after {
-            content: 'CONTACT';
-            margin-left: -40px;
-        }
-    }
-}
-
-ul {
-    display: flex;
-    gap: 20px;
-
-    li {
-        list-style: none;
-
-        a {
-            transition: all 0.3s ease;
-        }
-
-        a:hover {
-            transform: scale(1.1);
-        }
-    }
-}
-
-button {
-    display: none;
-    border: none;
-
-    background-color: transparent;
-    
-    transition: 0.3s all ease;
-    
-    &:hover {
-        transform: scale(1.1);
     }
 }
 
@@ -111,79 +111,83 @@ button {
         width: 100%;
     
         flex-direction: row;
-    }
 
-    nav {
-        display: none;
-        position: absolute;
-        right: 12px;
-        top: 55px;
-        gap: 15px;
-        width: 160px;
-        padding: 4px;
-
-        border-radius: 6px 6px 0px 0px;
-
-        a {
-            position: relative;
-            padding: 6px;
-            border-radius: 6px;
-
-            font-size: 16px;
-
-            &::after {
-                width: auto;
-                bottom: auto;
-                left: 40px;
-                top: 11px;
-                margin-top: -1px;
-                margin-left: 0px !important;
-                
-                font-size: 10px;
-                
-                opacity: 1;
-            }    
-
-            &:hover {
-                transform: none;
+        nav {
+            display: none;
+            position: absolute;
+            right: 12px;
+            top: 55px;
+            gap: 15px;
+            width: 160px;
+            padding: 4px;
     
-                svg {
-                    transition: all 0.3s ease-out;
-                    opacity: 1;
-                }
+            border-radius: 6px 6px 0px 0px;
+    
+            a {
+                position: relative;
+                padding: 6px;
+                border-radius: 6px;
+    
+                font-size: 16px;
     
                 &::after {
+                    width: auto;
+                    bottom: auto;
+                    left: 40px;
+                    top: 11px;
+                    margin-top: -1px;
+                    margin-left: 0px !important;
+                    
+                    font-size: 10px;
+                    
                     opacity: 1;
+                }    
+    
+                &:hover {
+                    transform: none;
+        
+                    svg {
+                        transition: all 0.3s ease-out;
+                        opacity: 1;
+                    }
+        
+                    &::after {
+                        opacity: 1;
+                    }
                 }
             }
         }
-    }
-    
-    ul {
-        position: absolute;
-        right: 12px;
-        top: 240px;
-        gap: 15px;
-        width: 160px;
 
-        display: flex;
-        justify-content: space-evenly;
+        ul {
+            position: absolute;
+            right: 12px;
+            top: 240px;
+            gap: 15px;
+            width: 160px;
+    
+            display: flex;
+            justify-content: space-evenly;
+            
+            border-radius: 0px 0px 6px 6px;
+            padding: 4px;
+    
+            transition: 0.3s all ease;
+        }
+    
+        button {
+            display: block;
+        }
+    
+        .show {
+            display: flex;
+        }
         
-        border-radius: 0px 0px 6px 6px;
-        padding: 4px;
-
-        transition: 0.3s all ease;
+        .hide {
+            display: none;
+        }
     }
 
-    button {
-        display: block;
-    }
 
-    .show {
-        display: flex;
-    }
     
-    .hide {
-        display: none;
-    }
+
 }
