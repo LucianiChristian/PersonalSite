@@ -1,16 +1,15 @@
 import React from 'react';
 import "./Home.scss";
-import personalPicture from "./personalPicture.jpg";
 
 export default function Home() {
     return (
         <div className="home">
             <div className="top">
-                <h1>Hello, I'm Christian Luciani.</h1>
+                <h2>Hello, I'm Christian Luciani.</h2>
                 <div className="personalPictureContainer">
                     <div className="personalPicture"></div>
                 </div>
-                <h1>A web developer from the U.S.</h1>
+                <h2>A web developer from the U.S.</h2>
             </div>
             <div className="middle">
 

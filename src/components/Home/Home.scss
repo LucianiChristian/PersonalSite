@@ -4,6 +4,12 @@
     align-items: center;
 
     height: 100%;
+
+    padding: 40px;
+    
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
 }
 
 .top {
@@ -20,10 +26,17 @@
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 1050px) {
+    .top {
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
