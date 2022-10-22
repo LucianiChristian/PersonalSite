@@ -13,20 +13,22 @@ export default function Layout() {
     return (
         <div className="container">
             <Sidebar />
-            <ThemeContextConsumer>
-                {(context) => (
-                    <div className={`page ${context.theme}`}>
-                        <ThemeToggleButton />
-                        <Routes>
-                            <Route path="/" element={<Home />} />
-                            <Route path="/works" element={<Works />} />
-                            <Route path="/posts" element={<Posts />} />
-                            <Route path="/contact" element={<Contact />} />
-                        </Routes>
-                    </div>
-                )}
-                    
-            </ThemeContextConsumer>    
+
+                <ThemeContextConsumer>
+                    {(context) => (
+                        <div className={`page ${context.theme}`}>
+                            <ThemeToggleButton />
+                            <div className="contentContainer">
+                                <Routes>
+                                    <Route path="/" element={<Home />} />
+                                    <Route path="/works" element={<Works />} />
+                                    <Route path="/posts" element={<Posts />} />
+                                    <Route path="/contact" element={<Contact />} />
+                                </Routes>
+                            </div>      
+                        </div>
+                    )}     
+                </ThemeContextConsumer>          
         </div>
     );
 }
