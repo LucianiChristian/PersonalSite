@@ -21,6 +21,16 @@ $light-hover: rgba(128, 128, 128, 0.3);
             background: $dark-accent;
             color: $dark-secondaryText;
         }
+
+        input, textarea {
+            background-color: $dark-secondarybg-color;
+            color: $dark-mainText;
+        }
+
+        button {
+            border-color: $dark-accent;
+            color: $dark-accent;
+        }
     }
     &.sidebar {
         background-color: $dark-secondarybg-color;
@@ -59,7 +69,6 @@ $light-hover: rgba(128, 128, 128, 0.3);
             }
         }
     }
-
     @media (max-width: 600px) {
         nav {
             a {
