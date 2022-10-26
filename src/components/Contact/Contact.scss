@@ -1,5 +1,12 @@
 @import "../../vars.scss";
 
+.contact {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 form {
     ul {
         display: grid;
@@ -37,7 +44,7 @@ form {
         }
     }
     button {
-        padding: 0.5em 1em;
+        padding: 0.5em 1.5em;
         border-radius: calc($border-radius / 2);
         background-color: transparent;
         letter-spacing: $letter-spacing;
