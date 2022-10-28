@@ -8,8 +8,10 @@ export default function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
 
+        console.log(refForm.current);
+
         emailjs.sendForm(
-            'gmail',
+            'default_service',
             'contact_form',
             refForm.current,
             'rFUFpdGG4sJyiKsHQ'
