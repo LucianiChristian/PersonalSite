@@ -31,6 +31,29 @@ $light-hover: rgba(128, 128, 128, 0.3);
             border-color: $dark-accent;
             color: $dark-accent;
         }
+
+        hr {
+            background-color: $dark-secondarybg-color;
+            border: 1px solid $dark-secondarybg-color;
+        }
+;
+        .posts {
+            h2 {
+                color: $dark-accent;
+                opacity: 0.8;
+            }
+            .article {
+                &:hover {
+                    p {
+                        border-color: $dark-secondaryText;    
+                    }
+                }
+                .date {
+                    color: $dark-accent;
+                    opacity: 0.75;
+                }
+            }
+        }
     }
     &.sidebar {
         background-color: $dark-secondarybg-color;

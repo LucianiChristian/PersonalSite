@@ -1,0 +1,35 @@
+.posts {
+    header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+.articleYear {
+    margin-bottom: 20px;
+    
+    hr {
+        margin-bottom: 10px;
+    }
+}
+
+.article {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 6px;
+
+    &:hover {
+        p {
+            border-bottom: 2px solid red;
+            margin-bottom: -2px;        
+        }
+    }
+
+    .date {
+        font-size: 0.7rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+}

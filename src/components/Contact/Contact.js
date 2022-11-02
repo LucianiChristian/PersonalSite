@@ -8,8 +8,6 @@ export default function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        console.log(refForm.current);
-
         emailjs.sendForm(
             'default_service',
             'contact_form',
@@ -28,7 +26,7 @@ export default function Contact() {
     return (
         <div className="contact">
             <h1>Contact Me</h1>
-            <p>I am interested in professional or freelance opportunities. If you have any questions of requests, feel free to use the form below.</p>
+            <p>I am interested in professional or freelance opportunities. If you have any questions or requests, feel free to use the form below.</p>
             <div className="contactForm">
                 <form ref={refForm} onSubmit={sendEmail}>
                     <ul>
