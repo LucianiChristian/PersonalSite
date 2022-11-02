@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Home.scss";
-import 'animate.css';
 
 export default function Home() {
     return (

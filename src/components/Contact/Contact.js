@@ -24,7 +24,7 @@ export default function Contact() {
     }
 
     return (
-        <div className="contact">
+        <div className="contact animate__animated animate__fadeIn">
             <h1>Contact Me</h1>
             <p>I am interested in professional or freelance opportunities. If you have any questions or requests, feel free to use the form below.</p>
             <div className="contactForm">
