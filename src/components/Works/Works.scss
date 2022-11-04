@@ -22,6 +22,11 @@
 
     border-radius: $border-radius;
     box-shadow: $box-shadow;
+
+    &:hover {
+        transform: scale(1.03);
+        transition: transform 0.2s ease;
+    }
 }
 
 .card-top {
