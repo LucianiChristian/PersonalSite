@@ -1,0 +1,56 @@
+@import '../../vars.scss';
+
+.works {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.projects {
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    width: 300px;
+    height: 320px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+
+.card-top {
+    flex: 1;
+    
+    padding: 10px;
+
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+.card-middle {
+    flex: 4;
+
+    background-image: linear-gradient(blue, grey);
+}
+
+.card-bottom {
+    flex: 2;
+
+    padding: 10px;
+
+    font-size: 0.8rem;
+
+    .links {
+        display: flex;
+        justify-content: flex-end;
+        letter-spacing: 1px;
+        gap: 8px;
+    }
+}
