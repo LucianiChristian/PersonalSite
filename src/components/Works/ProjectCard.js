@@ -1,18 +1,25 @@
 import React from 'react';
 
-export default function ProjectCard() {
+
+export default function ProjectCard(props) {
+    // utilize props to dynamically display values
+    const {title, stack, image, description, repoLink, demoLink} = props.projectData;
+
     return (
         <div className="card">
             <div className="card-top">
-                <h3>Tic-Tac-Toe</h3>
-                <p>HTML, CSS, JS</p>
+                <h3>{title}</h3>
+                <p>{stack}</p>
             </div>
-            <div className="card-middle"></div>
+            <div className="card-middle" style={{
+                backgroundImage: `url(${image})`,
+            }}>
+            </div>
             <div className="card-bottom">
-                <p>Implemented MVC design pattern to handle dynamic renders from data updates.</p>
+                <p>{description}</p>
                 <div className="links"> 
-                    <a href="">REPO</a>
-                    <a href="">DEMO</a>
+                    <a href={repoLink}>REPO</a>
+                    <a href={demoLink}>DEMO</a>
                 </div>
             </div>
         </div>
