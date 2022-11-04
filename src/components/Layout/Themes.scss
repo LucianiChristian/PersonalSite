@@ -59,6 +59,13 @@ $light-hover: rgba(128, 128, 128, 0.3);
             .card {
                 background-color: $dark-secondarybg-color;
             }
+            .card-bottom {
+                .links {
+                    & > *:hover {
+                        color: $dark-accent;
+                    }
+                }
+            }
         }
     }
     &.sidebar {

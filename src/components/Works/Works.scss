@@ -37,7 +37,7 @@
 .card-middle {
     flex: 4;
 
-    background-image: linear-gradient(blue, grey);
+    background-image: linear-gradient(whitesmoke, rgb(65, 31, 65));
 }
 
 .card-bottom {
@@ -52,5 +52,10 @@
         justify-content: flex-end;
         letter-spacing: 1px;
         gap: 8px;
+
+        & > *:hover {
+            transition: all 0.3s ease;
+            transform: scale(1.01);
+        }
     }
 }
