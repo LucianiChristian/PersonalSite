@@ -18,8 +18,8 @@ export default function ProjectCard(props) {
             <div className="card-bottom">
                 <p>{description}</p>
                 <div className="links"> 
-                    <a href={repoLink}>REPO</a>
-                    <a href={demoLink}>DEMO</a>
+                    <a target="_blank" rel="noopener noreferrer" href={repoLink}>REPO</a>
+                    <a target="_blank" rel="noopener noreferrer" href={demoLink}>DEMO</a>
                 </div>
             </div>
         </div>
