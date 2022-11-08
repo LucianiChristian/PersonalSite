@@ -12,6 +12,8 @@
     align-items: center;
     justify-content: space-between;
 
+    z-index: 1;
+
     .logo {
         text-decoration: none;
         text-align: center;
@@ -71,7 +73,7 @@
             }
             &.contact-link::after {
                 content: 'CONTACT';
-                margin-left: -40px;
+                margin-left: -43px;
             }
         }
     }
@@ -163,7 +165,7 @@
         ul {
             position: absolute;
             right: 12px;
-            top: 240px;
+            top: 254px;
             gap: 15px;
             width: 160px;
     
@@ -188,8 +190,4 @@
             display: none;
         }
     }
-
-
-    
-
 }
