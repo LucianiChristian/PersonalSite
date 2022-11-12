@@ -25,9 +25,11 @@
     border-radius: $border-radius;
     box-shadow: $box-shadow;
 
+    transition: $transition;
+
     &:hover {
-        transform: scale(1.03);
-        transition: transform 0.2s ease;
+        transform: scale(1.01);
+        box-shadow: 0px 2px 2px #00000040
     }
 }
 
@@ -45,7 +47,7 @@
     flex: 4;
 
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -70,9 +72,12 @@
         justify-content: flex-end;
         letter-spacing: 1px;
         gap: 8px;
+        
+        > * {
+            transition: $transition;
+        }
 
-        & > *:hover {
-            transition: all 0.3s ease;
+        > *:hover {
             transform: scale(1.01);
         }
     }
