@@ -1,29 +1,29 @@
 $dark-mainText: rgba(216, 213, 213, 0.893);
 $dark-secondaryText: #787692;
-$dark-bg-color: #33314e;
-$dark-secondarybg-color: #3d3b57;
+$dark-background: #33314e;
+$dark-secondarybackground: #3d3b57;
 $dark-accent: #ffd700;
 $dark-hover: rgba(128, 128, 128, 0.3);
 
-$light-mainText: black;
+$light-mainText: #1a202c;
 $light-secondaryText: #787692;
-$light-bg-color: white;
-$light-secondarybg-color: #f6f6f6;
-$light-accent: #ffd700; 
+$light-background: rgb(240, 231, 219);
+$light-secondarybackground: rgb(244 237 228);
+$light-accent: #c85a6e; 
 $light-hover: rgba(128, 128, 128, 0.3);
 
 .dark {
     &.page {
-        background-color: $dark-bg-color;
+        background-color: $dark-background;
         color: $dark-mainText;
 
         .themeToggle {
             background: $dark-accent;
-            color: $dark-secondaryText;
+            color: $dark-background;
         }
 
         input, textarea {
-            background-color: $dark-secondarybg-color;
+            background-color: $dark-secondarybackground;
             color: $dark-mainText;
         }
 
@@ -33,8 +33,8 @@ $light-hover: rgba(128, 128, 128, 0.3);
         }
 
         hr {
-            background-color: $dark-secondarybg-color;
-            border: 1px solid $dark-secondarybg-color;
+            background-color: $dark-secondarybackground;
+            border: 1px solid $dark-secondarybackground;
         }
 ;
         .posts {
@@ -57,7 +57,7 @@ $light-hover: rgba(128, 128, 128, 0.3);
 
         .works {
             .card {
-                background-color: $dark-secondarybg-color;
+                background-color: $dark-secondarybackground;
             }
             .card-bottom {
                 .links {
@@ -69,11 +69,11 @@ $light-hover: rgba(128, 128, 128, 0.3);
         }
     }
     &.sidebar {
-        background-color: $dark-secondarybg-color;
+        background-color: $dark-secondarybackground;
         color: $dark-secondaryText;
 
         nav, ul, p {
-            background-color: $dark-secondarybg-color;
+            background-color: $dark-secondarybackground;
             color: $dark-mainText;
             
             a {
@@ -118,20 +118,66 @@ $light-hover: rgba(128, 128, 128, 0.3);
 
 .light {
     &.page {
-        background-color: $light-bg-color;
+        background-color: $light-background;
         color: $light-mainText;
 
         .themeToggle {
             background: $light-accent;
-            color: $light-secondaryText;
+            color: $light-background;
+        }
+
+        input, textarea {
+            background-color: $light-secondarybackground;
+            color: $light-mainText;
+        }
+
+        button {
+            border-color: $light-accent;
+            color: $light-accent;
+        }
+
+        hr {
+            background-color: $light-secondarybackground;
+            border: 1px solid $light-secondarybackground;
+        }
+;
+        .posts {
+            h2 {
+                color: $light-accent;
+                opacity: 0.8;
+            }
+            .article {
+                &:hover {
+                    p {
+                        border-color: $light-secondaryText;    
+                    }
+                }
+                .date {
+                    color: $light-accent;
+                    opacity: 0.75;
+                }
+            }
+        }
+
+        .works {
+            .card {
+                background-color: $light-secondarybackground;
+            }
+            .card-bottom {
+                .links {
+                    & > *:hover {
+                        color: $light-accent;
+                    }
+                }
+            }
         }
     }
     &.sidebar {
-        background-color: $light-secondarybg-color;
+        background-color: $light-secondarybackground;
         color: $light-secondaryText;
 
         nav, ul, p {
-            background-color: $light-secondarybg-color;
+            background-color: $light-secondarybackground;
             color: $light-mainText;
             
             a {
@@ -163,7 +209,6 @@ $light-hover: rgba(128, 128, 128, 0.3);
             }
         }
     }
-
     @media (max-width: 600px) {
         nav {
             a {
