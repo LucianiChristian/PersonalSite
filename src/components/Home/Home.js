@@ -12,12 +12,18 @@ export default function Home() {
                 <h2>A web developer from the U.S.</h2>
             </div>
             <div className="middle">
-                <p className="bio-A">As an undergraduate I have been exploring the field of Computer Science with an ever-growing interest. Although I
-                    have gained a wide-range of knowledge from my courses, the true value and joy has come through self-directed
-                    study and 'learning how to learn'. In the last year of my degree I have spent just as much time on my own projects
-                    as I have handling classes with great results.
+                <p className="bio-A">
+                    As a fresh graduate in Computer Science I am thrilled to continue my journey into software development. 
+                    Although I have gained 
+                    a wide range of knowledge from my courses, achieving a 3.9 GPA in my major, the true
+                    reward has been cultivating a deep interest in the art of learning and all the valuable things I discover about 
+                    myself in the process.
                 </p>
-                <p className="bio-B">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat in ipsam illum eveniet quod? Nesciunt architecto doloribus magnam deleniti ullam iste reiciendis inventore dolorem praesentium officia, ut necessitatibus, doloremque blanditiis.</p>
+                <p className="bio-B">
+                    Outside of coding, I like to spend my time on
+                    guitar, which I have been playing for 14 years, exploring new books and concepts, and meditation, which has informed how I
+                    approach everything in day to day life. 
+                </p>
             </div>
             <div className="bottom">
 

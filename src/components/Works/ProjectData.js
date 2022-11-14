@@ -13,7 +13,7 @@ const projects = [
         image: require("./ProjectImages/projectManager.png"),
         description: "Project Management application making use of local storage to store persistent user data.",
         repoLink: "https://github.com/LucianiChristian/ProjectManager",
-        demoLink: "https://lucianichristian.github.io/to-do-list/", 
+        demoLink: "https://lucianichristian.github.io/ProjectManager/", 
     },
     {
         title: "Calculator",
