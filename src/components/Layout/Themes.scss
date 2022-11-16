@@ -160,7 +160,6 @@ $light-hover: rgba(128, 128, 128, 0.3);
         .posts {
             h2 {
                 color: $light-accent;
-                opacity: 0.8;
             }
             .article {
                 &:hover {
@@ -170,7 +169,6 @@ $light-hover: rgba(128, 128, 128, 0.3);
                 }
                 .date {
                     color: $light-accent;
-                    opacity: 0.75;
                 }
             }
         }
