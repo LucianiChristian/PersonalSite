@@ -6,7 +6,9 @@ import { ThemeContextConsumer } from '../../contexts/ThemeContext';
 
 export default function ThemeToggleButton() {
     const [icon, setIcon] = React.useState("moon");
-    
+
+    let animation = "animate__jello";
+
     function handleClick() {
         setIcon(prevState => prevState === "moon" ? "sun" : "moon");
     }
@@ -14,7 +16,7 @@ export default function ThemeToggleButton() {
     return (
         <ThemeContextConsumer>
             {(context) => (
-                <button className="themeToggle" onClick={() => {
+                <button key={Math.random()} className={`themeToggle animate__animated ${animation}`} onClick={() => {
                         handleClick(); 
                         context.toggleTheme();
                     }}>
