@@ -1,6 +1,7 @@
 import React from 'react';
 import './Posts.scss';
 import ArticleYear from './ArticleYear';
+import postsData from './postsData';
 
 export default function Posts() {
     return (
@@ -10,8 +11,8 @@ export default function Posts() {
                 <p>A collection of writings generated during my explorations in learning Computer Science.</p>
             </header>
             <main className="articles">
-                <ArticleYear />
-                <ArticleYear />
+                <ArticleYear year="2022" data={postsData[2022]}/>
+                <ArticleYear year="2021" data={postsData[2021]}/>
             </main>
         </div>
     )
