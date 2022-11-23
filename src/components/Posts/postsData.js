@@ -2,7 +2,7 @@ const posts = {
     2022:  [
         {
             title: "JavaScript : Implementing Array Methods",
-            link: "https://lucianichristan.notion.site/Implementing-Array-Methods-8e7a83513f164e37a602fc745acd7b38",
+            link: "https://lucianichristan.notion.site/Implementing-Array-Methods-fab58e02d80a4d01a4626cef7e7e6975",
             date: "November 21st",
         },
         {
