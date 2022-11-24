@@ -44,3 +44,13 @@ a {
         align-items: center;
     }
 }
+
+@media (max-width: 600px) {
+    .article {
+        font-size: 0.8rem;
+    }
+
+    .article .date {
+        display: none;
+    }
+}

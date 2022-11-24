@@ -3,11 +3,11 @@ import Article from './Article';
 
 export default function ArticleYear(props) {
     return (
-        <div class="articleYear">
+        <div className="articleYear">
             <h2>{props.year}</h2>
             <hr />
             {props.data.map(article => (
-                <Article title={article.title} link={article.link} date={article.date}/>
+                <Article key={article.title} title={article.title} link={article.link} date={article.date}/>
             ))}        
         </div>
     )

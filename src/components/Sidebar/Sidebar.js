@@ -21,16 +21,16 @@ export default function Sidebar() {
                         <p className="logo">Christian Luciani</p>
                     </Link>
                     <nav className={showMenu ? "show" : "hide"}>
-                        <NavLink exact={true} activeclassname="active" to="/" end className="home-link">
+                        <NavLink exact="true" activeclassname="active" to="/" end className="home-link">
                             <FontAwesomeIcon icon={faHome} />
                         </NavLink>
-                        <NavLink exact={true} activeclassname="active" to="/works" className="works-link">
+                        <NavLink exact="true" activeclassname="active" to="/works" className="works-link">
                             <FontAwesomeIcon icon={faBriefcase} />
                         </NavLink>
-                        <NavLink exact={true} activeclassname="active" to="/posts" className="posts-link">
+                        <NavLink exact="true" activeclassname="active" to="/posts" className="posts-link">
                             <FontAwesomeIcon icon={faPen} />
                         </NavLink>
-                        <NavLink exact={true} activeclassname="active" to="/contact" className="contact-link">
+                        <NavLink exact="true" activeclassname="active" to="/contact" className="contact-link">
                             <FontAwesomeIcon icon={faEnvelope} />
                         </NavLink>
                     </nav>

@@ -53,12 +53,12 @@ const posts = {
     ],
     2021: [
         {
-            title: "Structure Of Programming Languages : Semantics",
+            title: "Programming Languages : Semantics",
             link: "https://lucianichristan.notion.site/Semantics-b11a7a02d7e74cb98b895978fc82ac79",
             date: "November 23rd",
         },
         {
-            title: "Structure Of Programming Languages : Syntax",
+            title: "Programming Languages : Syntax",
             link: "https://lucianichristan.notion.site/Syntax-fd1afb1349924669a696fa5a5e4743ef",
             date: "November 10th",
         },

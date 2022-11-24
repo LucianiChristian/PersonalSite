@@ -9,7 +9,7 @@ export default function Works() {
             <h1>Projects</h1>
             <div className="projects">
                 {projectData.map(project => (
-                    <ProjectCard projectData={project}/>
+                    <ProjectCard key={project.title} projectData={project}/>
                 ))}
             </div>
         </div>

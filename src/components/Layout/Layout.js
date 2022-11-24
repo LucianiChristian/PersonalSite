@@ -13,7 +13,6 @@ export default function Layout() {
     return (
         <div className="container">
             <Sidebar />
-
                 <ThemeContextConsumer>
                     {(context) => (
                         <div className={`page ${context.theme}`}>
