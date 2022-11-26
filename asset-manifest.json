@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/PersonalSite/static/css/main.39007cf7.css",
+    "main.js": "/PersonalSite/static/js/main.ea9d0a20.js",
+    "static/js/787.3ba5e41c.chunk.js": "/PersonalSite/static/js/787.3ba5e41c.chunk.js",
+    "static/media/calculator.png": "/PersonalSite/static/media/calculator.9443bae4f6625d371f65.png",
+    "static/media/personalPicture.jpg": "/PersonalSite/static/media/personalPicture.53eecf95fa9c31893806.jpg",
+    "static/media/bookLog.png": "/PersonalSite/static/media/bookLog.a30f877a966335a0bd3a.png",
+    "static/media/Poppins-Regular.ttf": "/PersonalSite/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/projectManager.png": "/PersonalSite/static/media/projectManager.1424c56dc4aa07ccb410.png",
+    "static/media/etchASketch.png": "/PersonalSite/static/media/etchASketch.83c34bb6afcb8b70b28e.png",
+    "static/media/ticTacToe.png": "/PersonalSite/static/media/ticTacToe.3a556c9c8cae2c75302d.png",
+    "index.html": "/PersonalSite/index.html",
+    "main.39007cf7.css.map": "/PersonalSite/static/css/main.39007cf7.css.map",
+    "main.ea9d0a20.js.map": "/PersonalSite/static/js/main.ea9d0a20.js.map",
+    "787.3ba5e41c.chunk.js.map": "/PersonalSite/static/js/787.3ba5e41c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39007cf7.css",
+    "static/js/main.ea9d0a20.js"
+  ]
+}
