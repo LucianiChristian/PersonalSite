@@ -16,7 +16,8 @@ export default function Contact() {
         )
         .then(() => {
             alert("Message successfully sent!");
-            window.location.reload(false);
+            console.log(refForm.current);
+            refForm.current.reset();
         },
         () => {
             alert("Failed to send the message, please try again.");
