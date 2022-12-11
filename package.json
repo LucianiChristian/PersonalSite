@@ -1,6 +1,6 @@
 {
   "name": "personal-site",
-  "homepage": "http://christianluciani.com/",
+  "homepage": "http://christianluciani.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
